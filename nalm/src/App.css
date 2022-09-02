@@ -1,0 +1,46 @@
+.App {
+  text-align: center;
+  font-family: "nalm";
+  color: #ff7373;
+}
+
+.head {
+  background-color: #fdd;
+  text-align: center;
+}
+
+.img {
+  padding-top: 30px;
+}
+
+.question {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.back {
+  padding-top: 20px;
+}
+
+.w-btn {
+  position: relative;
+  border: none;
+  display: inline-block;
+  padding: 10px 50px;
+  border-radius: 10px;
+  font-family: "nalm";
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.w-btn-pink {
+  background-color: #ff7373;
+  color: white;
+  font-family: "nalm";
+}
+
+@font-face {
+  font-family: "nalm";
+  src: url("./neodgm.ttf");
+}
