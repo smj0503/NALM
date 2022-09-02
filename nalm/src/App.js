@@ -11,6 +11,8 @@ import Result from './Result.js';
 import Price from './Questions/Price.js';
 import Experiecne from './Questions/Experience.js';
 import Ingredients from './Questions/Ingredients.js';
+import Mood from './Questions/Mood.js';
+import Time from './Questions/Time.js';
 
 // Q1
 import Price1 from './Q1/Price1.js';
@@ -70,6 +72,8 @@ function App() {
           <Route path="price" element={ <Price/> } />
           <Route path="experience" element={ <Experiecne/> } />
           <Route path="ingredients" element={ <Ingredients/> } />
+          <Route path="mood" element={ <Mood/> } />
+          <Route path="time" element={ <Time/> } />
 
           <Route path="amount1" element={ <Amount1/> } />
           <Route path="drink_category1" element={ <Dcategory1/> } />
