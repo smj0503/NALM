@@ -83,6 +83,36 @@ function Ingredients() {
       </div>
     );
   }
+  // Case 4
+  else {
+    return (
+      <div className="App">
+        <div className='question'>
+          <p>더 땡기는 것은 어느 쪽?</p>
+        </div>
+        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+          dispatch(addIngredients('육류'));
+          navigate('/algorithm/result');
+        }}>
+          육류
+        </button>
+        &emsp;
+        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+          dispatch(addIngredients('해산물'));
+          navigate('/algorithm/result');
+        }}>
+          해산물
+        </button>
+        &emsp;
+        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+          // 데이터 안넘겨줌
+          navigate('/algorithm/result');
+        }}>
+          둘다 NO
+        </button>
+      </div>
+    );
+  }
 }
 
 export default Ingredients;

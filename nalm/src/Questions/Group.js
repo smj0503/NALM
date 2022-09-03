@@ -1,9 +1,9 @@
 import '../App.css';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
-import { addExperience } from '../store';
+import { addGroup } from "../store.js";
 
-function Experiecne() {
+function Group() {
 
   const navigate = useNavigate();
 
@@ -12,101 +12,104 @@ function Experiecne() {
   const dispatch = useDispatch();
   
   // Case 1
-  if (condition.location === "흑석" && condition.drink === "o" && condition.price === "비쌈") {
+  if (condition.location === "흑석" && condition.drink === "o" 
+  && condition.price === "비쌈" && condition.experience === "익숙함" 
+  && condition.ingredients === "육류" && condition.mood === "신남") {
     return (
       <div className="App">
         <div className='question'>
-          <p>지금 더 끌리는 곳은?</p>
+          <p>몇 명이서 먹나요?</p>
         </div>
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
-          // 데이터 넘겨줌 : '익숙함'
-          dispatch(addExperience('익숙함'));
-          navigate('/algorithm/ingredients');
+          // 데이터 안넘겨줌
+          dispatch(addGroup(""));
+          navigate('/algorithm/result');
         }}>
-          익숙한 곳
+          2~4명
         </button>
         &emsp;
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
-          // 데이터 넘겨줌 : '색다름'
-          dispatch(addExperience('색다름'));
-          navigate('/algorithm/nation');
+          // 데이터 넘겨줌 : 'o'
+          dispatch(addGroup("o"));
+          navigate('/algorithm/result');
         }}>
-          색다른 곳
+          5명 이상
         </button>
       </div>
     );
   }
   // Case 2
-  else if (condition.location === "흑석" && condition.drink === "x" && condition.price === "저렴"
-  && (condition.nation === "중식" || condition.nation === "일식")) {
+  else if (condition.location === "흑석" && condition.drink === "o" && condition.price === "저렴"){
     return (
       <div className="App">
         <div className='question'>
-          <p>지금 더 끌리는 곳은?</p>
+          <p>몇 명이서 먹나요?</p>
         </div>
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
-          dispatch(addExperience('익숙함'));
-          navigate('/algorithm/result');
+          dispatch(addGroup(""));
+          navigate('/algorithm/mood');
         }}>
-          익숙한 곳
+          2~4명
         </button>
         &emsp;
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
-          dispatch(addExperience('색다름'));
+          dispatch(addGroup("o"));
           navigate('/algorithm/result');
         }}>
-          색다른 곳
+          5명 이상
         </button>
       </div>
     );
   }
   // Case 3
-  else if (condition.location === "상도" && condition.drink === "o" && condition.price === "비쌈") {
+  else if (condition.location === "상도" && condition.drink === "o" && condition.price === "비쌈"
+  && condition.nation === "한식" && condition.meat === "o"){
     return (
       <div className="App">
         <div className='question'>
-          <p>지금 더 끌리는 곳은?</p>
+          <p>몇 명이서 먹나요?</p>
         </div>
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
-          dispatch(addExperience('익숙함'));
-          navigate('/algorithm/mood');
+          dispatch(addGroup(""));
+          navigate('/algorithm/result');
         }}>
-          익숙한 곳
+          2~4명
         </button>
         &emsp;
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
-          dispatch(addExperience('색다름'));
-          navigate('/algorithm/mood');
+          // 데이터 넘겨줌 : 'o'
+          dispatch(addGroup("o"));
+          navigate('/algorithm/result');
         }}>
-          색다른 곳
+          5명 이상
         </button>
       </div>
     );
   }
   // Case 4
-  else if (condition.location === "상도" && condition.drink === "o" 
-  && condition.price === "저렴" && condition.mood === "조용") {
+  else {
     return (
       <div className="App">
         <div className='question'>
-          <p>지금 더 끌리는 곳은?</p>
+          <p>몇 명이서 먹나요?</p>
         </div>
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
-          dispatch(addExperience('익숙함'));
-          navigate('/algorithm/result');
+          // 데이터 안넘겨줌
+          dispatch(addGroup(""));
+          navigate('/algorithm/ingredients');
         }}>
-          익숙한 곳
+          2~4명
         </button>
         &emsp;
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
-          dispatch(addExperience('색다름'));
+          dispatch(addGroup("o"));
           navigate('/algorithm/result');
         }}>
-          색다른 곳
+          5명 이상
         </button>
       </div>
     );
   }
 }
 
-export default Experiecne;
+export default Group;

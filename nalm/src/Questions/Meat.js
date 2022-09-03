@@ -11,11 +11,10 @@ function Meat() {
   let condition = useSelector((state)=> state.condition);
   const dispatch = useDispatch();
   
-  // Case 1
   return (
     <div className="App">
       <div className='question'>
-        <p>고기가 들어간 음식이어야 하나요?</p>
+        <p>고깃집을 원하나요??</p>
       </div>
       <button class="w-btn w-btn-pink" type="button" onClick={()=>{
         // 데이터 넘겨줌 : 'o'
@@ -34,7 +33,6 @@ function Meat() {
       </button>
     </div>
   );
-  
 }
 
 export default Meat;

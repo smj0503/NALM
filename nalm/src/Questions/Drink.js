@@ -1,7 +1,7 @@
-import './App.css';
+import '../App.css';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
-import { addDrink } from './store';
+import { addDrink } from '../store.js';
 
 function Drink() {
 
@@ -19,16 +19,14 @@ function Drink() {
       <button class="w-btn w-btn-pink" type="button" onClick={()=>{
         // 데이터 넘겨줌 : 'o'
         dispatch(addDrink('o'));
-        // navigate('/algorithm/price1');
         navigate('/algorithm/price');
       }}>
-        좋아요
+        &nbsp;&emsp;좋아요&emsp;&nbsp;
       </button>
       &emsp;
       <button class="w-btn w-btn-pink" type="button" onClick={()=>{
         // 데이터 넘겨줌 : 'x'
         dispatch(addDrink('x'));
-        // navigate('/algorithm/price2');
         navigate('/algorithm/price');
       }}>
         밥만 먹을래요

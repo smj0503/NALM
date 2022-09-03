@@ -2,10 +2,9 @@ import './App.css';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { useState } from 'react';
+import { useDispatch, useSelector } from "react-redux";
 
 import Place from './Place';
-
-import { useDispatch, useSelector } from "react-redux";
 
 function Result() {
   // DB에서 불러온 데이터 담아 줄 state

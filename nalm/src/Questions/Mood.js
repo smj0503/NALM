@@ -62,7 +62,8 @@ function Mood() {
     );
   }
   // Case 3
-  else if (condition.location === "흑석" && condition.drink === "o" && condition.price === "저렴") {
+  else if (condition.location === "흑석" && condition.drink === "o" 
+  && condition.price === "저렴" && condition.group === "") {
     return (
       <div className="App">
         <div className='question'>
@@ -149,7 +150,7 @@ function Mood() {
         &emsp;
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
           dispatch(addMood('신남'));
-          navigate('/algorithm/group');
+          navigate('/algorithm/result');
         }}>
           신나는 곳
         </button>
@@ -157,8 +158,7 @@ function Mood() {
     );
   }
   // Case 7
-  else if (condition.location === "상도" && condition.drink === "o" 
-  && condition.price === "저렴" && condition.experience === "색다름") {
+  else if (condition.location === "상도" && condition.drink === "o" && condition.price === "저렴") {
     return (
       <div className="App">
         <div className='question'>

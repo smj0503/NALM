@@ -15,7 +15,7 @@ let condition = createSlice({
     mood : '',
     group : '',
     ingredients : '',
-    kor_category : '',
+    kor_category1 : '',
     kor_category2 : '',
     meat : ''
   },
@@ -70,8 +70,8 @@ let condition = createSlice({
       state.ingredients = action.payload;
     },
     // 13 한식 정보 입력 함수 (찌개 / 백반)
-    addKcategory(state, action){
-      state.kor_category = action.payload;
+    addKcategory1(state, action){
+      state.kor_category1 = action.payload;
     },
     // 14 한식 정보2 입력 함수 (돈까스 / 떡볶이 / 국수 / 아무거나)
     addKcategory2(state, action){
@@ -92,7 +92,7 @@ export default configureStore({
 
 export let { 
   addAmount, addDcategory, addDrink, addExperience,
-  addGroup, addIngredients, addKcategory, addKcategory2,
+  addGroup, addIngredients, addKcategory1, addKcategory2,
   addLocation, addMeat, addMood, addNation, addNpick,
   addPrice, addTime
 } = condition.actions 

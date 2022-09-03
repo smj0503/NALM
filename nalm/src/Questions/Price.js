@@ -31,7 +31,7 @@ function Price() {
           dispatch(addPrice('저렴'));
           navigate('/algorithm/group');
         }}>
-          빡빡해요...
+          빡빡해요..
         </button>
       </div>
     );
@@ -54,11 +54,12 @@ function Price() {
           dispatch(addPrice('저렴'));
           navigate('/algorithm/nation');
         }}>
-          빡빡해요...
+          빡빡해요..
         </button>
       </div>
     );
   }
+  // Case 3
   else if (condition.location === "상도" && condition.drink === "o"){
     return (
       <div className="App">
@@ -76,12 +77,12 @@ function Price() {
           dispatch(addPrice('저렴'));
           navigate('/algorithm/mood');
         }}>
-          빡빡해요...
+          빡빡해요..
         </button>
       </div>
     );
   }
-  // Case 3
+  // Case 4
   else if (condition.location === "상도" && condition.drink === "x"){
     return (
       <div className="App">
@@ -99,7 +100,7 @@ function Price() {
           dispatch(addPrice('저렴'));
           navigate('/algorithm/nation');
         }}>
-          빡빡해요...
+          빡빡해요..
         </button>
       </div>
     );
