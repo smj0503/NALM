@@ -11,6 +11,7 @@ function Experiecne() {
   let condition = useSelector((state)=> state.condition);
   const dispatch = useDispatch();
   
+  // Case 1
   if (condition.location === "흑석" && condition.drink === "o" && condition.price === "비쌈") {
     return (
       <div className="App">
@@ -35,9 +36,8 @@ function Experiecne() {
       </div>
     );
   }
-  else if (condition.location === "흑석" 
-  && condition.drink === "x" 
-  && condition.price === "저렴"
+  // Case 2
+  else if (condition.location === "흑석" && condition.drink === "x" && condition.price === "저렴"
   && (condition.nation === "중식" || condition.nation === "일식")) {
     return (
       <div className="App">
@@ -60,6 +60,7 @@ function Experiecne() {
       </div>
     );
   }
+  // Case 3
   else if (condition.location === "상도" && condition.drink === "o" && condition.price === "비쌈") {
     return (
       <div className="App">
@@ -82,10 +83,9 @@ function Experiecne() {
       </div>
     );
   }
-  else if (condition.location === "상도" 
-  && condition.drink === "o" 
-  && condition.price === "저렴" 
-  && condition.mood === "조용") {
+  // Case 4
+  else if (condition.location === "상도" && condition.drink === "o" 
+  && condition.price === "저렴" && condition.mood === "조용") {
     return (
       <div className="App">
         <div className='question'>

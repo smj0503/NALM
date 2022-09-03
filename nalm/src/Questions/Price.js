@@ -11,6 +11,7 @@ function Price() {
   let condition = useSelector((state)=> state.condition);
   const dispatch = useDispatch();
   
+  // Case 1
   if (condition.location === "흑석" && condition.drink === "o"){
     return (
       <div className="App">
@@ -35,6 +36,7 @@ function Price() {
       </div>
     );
   }
+  // Case 2
   else if (condition.location === "흑석" && condition.drink === "x"){
     return (
       <div className="App">
@@ -79,6 +81,7 @@ function Price() {
       </div>
     );
   }
+  // Case 3
   else if (condition.location === "상도" && condition.drink === "x"){
     return (
       <div className="App">
