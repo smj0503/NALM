@@ -1,10 +1,10 @@
 import './App.css';
-import { useNavigate } from 'react-router-dom';
+//import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { useState } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 
-import Place from './Place';
+import Place from "./Place.js"
 
 function Result() {
   // DB에서 불러온 데이터 담아 줄 state
@@ -26,7 +26,7 @@ function Result() {
           console.log('Fail to load!');
         });
       }}>결과 확인하기!</button>
-      <br></br>
+      <br/>
       <p>
         { list.map((a, i)=>{
           return(<Place list={list[i]} i={i+1}/>)
@@ -34,7 +34,6 @@ function Result() {
       </p>
 
     </div>
-
   );
 }
 

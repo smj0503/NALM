@@ -8,7 +8,6 @@ const connection = mysql.createConnection({
   host     : 'localhost',
   user     : 'nalm',
   password : 'smjcau2017!',
-  //database : 'test'
   database : 'nalm'
 });
 
@@ -29,7 +28,6 @@ connection.connect((err)=>{
 
 app.get('/data', (req, res)=>{
   const sql = "select * from restaurant"
-  //const sql = "select * from beta"
   connection.query(sql, (err, result, fields)=>{
     if (err) throw err;
     res.json(result);

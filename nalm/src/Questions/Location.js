@@ -14,6 +14,7 @@ const Button = styled.button`
   background-color: inherit;
   color: #ff7373;
   border: 0;
+  
 `;
 
 function Location() {
