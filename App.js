@@ -17,8 +17,8 @@ const cors = require('cors');
 app.use(cors());
 
 // 서버 접속 확인
-app.listen(3001, ()=>{
-  console.log('listening on 3001')
+app.listen(8080, ()=>{
+  console.log('listening on 8080')
 });
 
 connection.connect((err)=>{

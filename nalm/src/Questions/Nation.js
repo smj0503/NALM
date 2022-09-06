@@ -22,7 +22,7 @@ function Nation() {
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
           // 데이터 넘겨줌 : '한식'
           dispatch(addNation('한식'));
-          navigate('/algorithm/result');
+          navigate('/algorithm/result4');
         }}>
           &nbsp;한식&nbsp;
         </button>
@@ -30,7 +30,7 @@ function Nation() {
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
           // 데이터 넘겨줌 : '중식'
           dispatch(addNation('중식'));
-          navigate('/algorithm/result');
+          navigate('/algorithm/result4');
         }}>
           &nbsp;중식&nbsp;
         </button>
@@ -38,7 +38,7 @@ function Nation() {
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
           // 데이터 넘겨줌 : '일식'
           dispatch(addNation('일식'));
-          navigate('/algorithm/result');
+          navigate('/algorithm/result4');
         }}>
           &nbsp;일식&nbsp;
         </button>
@@ -46,7 +46,7 @@ function Nation() {
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
           // 데이터 넘겨줌 : '미국'
           dispatch(addNation('미국'));
-          navigate('/algorithm/result');
+          navigate('/algorithm/result4');
         }}>
           &nbsp;미국&nbsp;
         </button>
@@ -98,14 +98,14 @@ function Nation() {
         &emsp;
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
           dispatch(addNation('미국'));
-          navigate('/algorithm/result');
+          navigate('/algorithm/result12');
         }}>
           &nbsp;미국&nbsp;
         </button>
         &emsp;
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
           dispatch(addNation('이태리'));
-          navigate('/algorithm/result');
+          navigate('/algorithm/result12');
         }}>
           이태리
         </button>

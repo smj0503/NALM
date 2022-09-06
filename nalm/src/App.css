@@ -22,6 +22,10 @@
   padding-top: 20px;
 }
 
+.result {
+  padding-top: 50px;
+}
+
 .w-btn {
   position: relative;
   border: none;

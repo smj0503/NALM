@@ -19,7 +19,7 @@ function Kcategory2() {
       <button class="w-btn w-btn-pink" type="button" onClick={()=>{
         // 데이터 넘겨줌 : '돈까스'
         dispatch(addKcategory2('돈까스'));
-        navigate('/algorithm/result');
+        navigate('/algorithm/result15');
       }}>
         돈까스
       </button>
@@ -27,7 +27,7 @@ function Kcategory2() {
       <button class="w-btn w-btn-pink" type="button" onClick={()=>{
         // 데이터 넘겨줌 : '떡볶이'
         dispatch(addKcategory2('떡볶이'));
-        navigate('/algorithm/result');
+        navigate('/algorithm/result15');
       }}>
         떡볶이
       </button>
@@ -35,7 +35,7 @@ function Kcategory2() {
       <button class="w-btn w-btn-pink" type="button" onClick={()=>{
         // 데이터 넘겨줌 : '국수'
         dispatch(addKcategory2('국수'));
-        navigate('/algorithm/result');
+        navigate('/algorithm/result15');
       }}>
         국수류
       </button>
@@ -43,7 +43,7 @@ function Kcategory2() {
       <button class="w-btn w-btn-pink" type="button" onClick={()=>{
         // 데이터 넘겨줌 : '아무거나'
         dispatch(addKcategory2('아무거나'));
-        navigate('/algorithm/result');
+        navigate('/algorithm/result15');
       }}>
         김밥같은 간편식
       </button>

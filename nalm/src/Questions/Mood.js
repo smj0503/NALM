@@ -13,7 +13,8 @@ function Mood() {
   
   // Case 1
   if (condition.location === "흑석" && condition.drink === "o" 
-  && condition.price === "비쌈" && condition.experience === "익숙함" && condition.ingredients === "육류") {
+  && condition.price === "비쌈" && condition.experience === "익숙함" 
+  && condition.ingredients === "육류") {
     return (
       <div className="App">
         <div className='question'>
@@ -22,7 +23,7 @@ function Mood() {
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
           // 데이터 넘겨줌 : '조용'
           dispatch(addMood('조용'));
-          navigate('/algorithm/result');
+          navigate('/algorithm/result2');
         }}>
           조용한 곳
         </button>
@@ -54,7 +55,7 @@ function Mood() {
         &emsp;
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
           dispatch(addMood('신남'));
-          navigate('/algorithm/result');
+          navigate('/algorithm/result6');
         }}>
           신나는 곳
         </button>
@@ -71,14 +72,14 @@ function Mood() {
         </div>
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
           dispatch(addMood('조용'));
-          navigate('/algorithm/result');
+          navigate('/algorithm/result9');
         }}>
           조용한 곳
         </button>
         &emsp;
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
           dispatch(addMood('신남'));
-          navigate('/algorithm/result');
+          navigate('/algorithm/result9');
         }}>
           신나는 곳
         </button>

@@ -23,7 +23,7 @@ function Group() {
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
           // 데이터 안넘겨줌
           dispatch(addGroup(""));
-          navigate('/algorithm/result');
+          navigate('/algorithm/result3');
         }}>
           2~4명
         </button>
@@ -31,7 +31,7 @@ function Group() {
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
           // 데이터 넘겨줌 : 'o'
           dispatch(addGroup("o"));
-          navigate('/algorithm/result');
+          navigate('/algorithm/result3');
         }}>
           5명 이상
         </button>
@@ -54,7 +54,7 @@ function Group() {
         &emsp;
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
           dispatch(addGroup("o"));
-          navigate('/algorithm/result');
+          navigate('/algorithm/result8');
         }}>
           5명 이상
         </button>

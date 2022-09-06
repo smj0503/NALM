@@ -24,13 +24,13 @@ function Ingredients() {
           dispatch(addIngredients('육류'));
           navigate('/algorithm/mood');
         }}>
-          육류
+          &nbsp;육류&nbsp;
         </button>
         &emsp;
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
           // 데이터 넘겨줌 : '해산물'
           dispatch(addIngredients('해산물'));
-          navigate('/algorithm/result');
+          navigate('/algorithm/result1');
         }}>
           해산물
         </button>
@@ -48,12 +48,12 @@ function Ingredients() {
           dispatch(addIngredients('육류'));
           navigate('/algorithm/amount');
         }}>
-          육류
+          &nbsp;육류&nbsp;
         </button>
         &emsp;
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
           dispatch(addIngredients('해산물'));
-          navigate('/algorithm/result');
+          navigate('/algorithm/result10');
         }}>
           해산물
         </button>
@@ -71,7 +71,7 @@ function Ingredients() {
           dispatch(addIngredients('육류'));
           navigate('/algorithm/result');
         }}>
-          육류
+          &nbsp;육류&nbsp;
         </button>
         &emsp;
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
@@ -94,7 +94,7 @@ function Ingredients() {
           dispatch(addIngredients('육류'));
           navigate('/algorithm/result');
         }}>
-          육류
+          &nbsp;육류&nbsp;
         </button>
         &emsp;
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{

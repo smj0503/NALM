@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 
-function Place(props) {
+function Place5(props) {
 
   let condition = useSelector((state)=> state.condition);
 
@@ -9,15 +9,7 @@ function Place(props) {
     && props.list.nation === condition.nation
     && props.list.price === condition.price
     && props.list.experience === condition.experience
-    && props.list.time === condition.time
-    && props.list.amount === condition.amount
     && props.list.drink_category === condition.drink_category
-    && props.list.mood === condition.mood
-    && props.list.group === condition.group
-    && props.list.ingredients === condition.ingredients
-    && props.list.kor_category === condition.kor_category1
-    && props.list.kor_category2 === condition.kor_category2
-    && props.list.meat === condition.meat 
     ){
     return (
       <div>
@@ -29,4 +21,4 @@ function Place(props) {
   return null;
 }
 
-export default Place;
+export default Place5;

@@ -19,7 +19,7 @@ function Kcategory1() {
       <button class="w-btn w-btn-pink" type="button" onClick={()=>{
         // 데이터 넘겨줌 : '찌개'
         dispatch(addKcategory1('찌개'));
-        navigate('/algorithm/result');
+        navigate('/algorithm/result14');
       }}>
         찌개나 국물류
       </button>
@@ -27,7 +27,7 @@ function Kcategory1() {
       <button class="w-btn w-btn-pink" type="button" onClick={()=>{
         // 데이터 넘겨줌 : '백반'
         dispatch(addKcategory1('백반'));
-        navigate('/algorithm/result');
+        navigate('/algorithm/result14');
       }}>
         백반 종류
       </button>
