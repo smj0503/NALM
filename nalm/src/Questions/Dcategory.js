@@ -93,21 +93,21 @@ function Dcategory() {
         </div>
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
           dispatch(addDcategory('양주'));
-          navigate('/algorithm/result');
+          navigate('/algorithm/result23');
         }}>
           와인 / 칵테일
         </button>
         &emsp;
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
           dispatch(addDcategory('이자카야'));
-          navigate('/algorithm/result');
+          navigate('/algorithm/result23');
         }}>
           이자카야
         </button>
         &emsp;
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
           dispatch(addDcategory('호프'));
-          navigate('/algorithm/result');
+          navigate('/algorithm/result23');
         }}>
           호프
         </button>

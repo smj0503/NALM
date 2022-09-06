@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useState } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 
-import Place13 from "../Places/Place13.js"
+import Place13 from "../Places_Heukseok/Place13.js"
 
 function Result13() {
   // DB에서 불러온 데이터 담아 줄 state

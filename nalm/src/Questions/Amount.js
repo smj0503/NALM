@@ -46,14 +46,14 @@ function Amount() {
         </div>
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
           dispatch(addAmount('적당'));
-          navigate('/algorithm/result');
+          navigate('/algorithm/result24');
         }}>
           적당히 먹을래요
         </button>
         &emsp;
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
           dispatch(addAmount('많음'));
-          navigate('/algorithm/result');
+          navigate('/algorithm/result24');
         }}>
           양이 많았으면 해요
         </button>

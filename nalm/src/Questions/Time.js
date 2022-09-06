@@ -46,7 +46,7 @@ function Time() {
         </div>
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
           dispatch(addTime('1'));
-          navigate('/algorithm/result');
+          navigate('/algorithm/result24');
         }}>
           최대한 짧게
         </button>

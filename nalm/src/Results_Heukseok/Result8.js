@@ -3,9 +3,9 @@ import axios from 'axios';
 import { useState } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 
-import Place3 from "../Places/Place3.js"
+import Place8 from "../Places_Heukseok/Place8.js"
 
-function Result3() {
+function Result8() {
   // DB에서 불러온 데이터 담아 줄 state
   let [list, setList] = useState([]);
 
@@ -30,11 +30,11 @@ function Result3() {
       <br/>
       <p>
         {list.map((a, i)=>{
-          return(<Place3 list={list[i]} i={i+1}/>)
+          return(<Place8 list={list[i]} i={i+1}/>)
         })}
       </p>
     </div>
   );
 }
 
-export default Result3;
+export default Result8;

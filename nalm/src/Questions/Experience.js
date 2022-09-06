@@ -93,14 +93,14 @@ function Experiecne() {
         </div>
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
           dispatch(addExperience('익숙함'));
-          navigate('/algorithm/result');
+          navigate('/algorithm/result24');
         }}>
           익숙한 곳
         </button>
         &emsp;
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
           dispatch(addExperience('색다름'));
-          navigate('/algorithm/result');
+          navigate('/algorithm/result24');
         }}>
           색다른 곳
         </button>

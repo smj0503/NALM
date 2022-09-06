@@ -96,14 +96,14 @@ function Mood() {
         </div>
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
           dispatch(addMood('조용'));
-          navigate('/algorithm/result');
+          navigate('/algorithm/result19');
         }}>
           조용한 곳
         </button>
         &emsp;
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
           dispatch(addMood('신남'));
-          navigate('/algorithm/result');
+          navigate('/algorithm/result19');
         }}>
           신나는 곳
         </button>
@@ -120,7 +120,7 @@ function Mood() {
         </div>
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
           dispatch(addMood('조용'));
-          navigate('/algorithm/result');
+          navigate('/algorithm/result20');
         }}>
           조용한 곳
         </button>
@@ -151,7 +151,7 @@ function Mood() {
         &emsp;
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
           dispatch(addMood('신남'));
-          navigate('/algorithm/result');
+          navigate('/algorithm/result20');
         }}>
           신나는 곳
         </button>
@@ -174,7 +174,7 @@ function Mood() {
         &emsp;
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
           dispatch(addMood('신남'));
-          navigate('/algorithm/result');
+          navigate('/algorithm/result24');
         }}>
           신나는 곳
         </button>

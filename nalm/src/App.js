@@ -4,8 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from "../src/img/logo.png"
 import character from "../src/img/LM2.png"
 
+// Questions
 import Algorithm from './Algorithm.js';
-
 import Location from './Questions/Location.js';
 import Drink from './Questions/Drink.js';
 import Price from './Questions/Price.js';
@@ -22,21 +22,33 @@ import Group from './Questions/Group.js';
 import Nation from './Questions/Nation.js';
 
 import Result from './Result.js';
-import Result1 from './Results/Result1.js';
-import Result2 from './Results/Result2.js';
-import Result3 from './Results/Result3.js';
-import Result4 from './Results/Result4.js';
-import Result5 from './Results/Result5.js';
-import Result6 from './Results/Result6.js';
-import Result7 from './Results/Result7.js';
-import Result8 from './Results/Result8.js';
-import Result9 from './Results/Result9.js';
-import Result10 from './Results/Result10.js';
-import Result11 from './Results/Result11.js';
-import Result12 from './Results/Result12.js';
-import Result13 from './Results/Result13.js';
-import Result14 from './Results/Result14.js';
-import Result15 from './Results/Result15.js';
+// 흑석 Result Components
+import Result1 from './Results_Heukseok/Result1.js';
+import Result2 from './Results_Heukseok/Result2.js';
+import Result3 from './Results_Heukseok/Result3.js';
+import Result4 from './Results_Heukseok/Result4.js';
+import Result5 from './Results_Heukseok/Result5.js';
+import Result6 from './Results_Heukseok/Result6.js';
+import Result7 from './Results_Heukseok/Result7.js';
+import Result8 from './Results_Heukseok/Result8.js';
+import Result9 from './Results_Heukseok/Result9.js';
+import Result10 from './Results_Heukseok/Result10.js';
+import Result11 from './Results_Heukseok/Result11.js';
+import Result12 from './Results_Heukseok/Result12.js';
+import Result13 from './Results_Heukseok/Result13.js';
+import Result14 from './Results_Heukseok/Result14.js';
+import Result15 from './Results_Heukseok/Result15.js';
+
+// 상도 Result Components
+import Result16 from './Results_Sangdo/Result16.js';
+import Result17 from './Results_Sangdo/Result17.js';
+import Result18 from './Results_Sangdo/Result18.js';
+import Result19 from './Results_Sangdo/Result19.js';
+import Result20 from './Results_Sangdo/Result20.js';
+import Result21 from './Results_Sangdo/Result21.js';
+import Result22 from './Results_Sangdo/Result22.js';
+import Result23 from './Results_Sangdo/Result23.js';
+import Result24 from './Results_Sangdo/Result24.js';
 
 function App() {
 
@@ -63,8 +75,8 @@ function App() {
           </div>
          } />
 
+        {/* Questions */}
         <Route path="/algorithm" element={ <Algorithm/> }>
-
           <Route path="location" element={ <Location/> } />
           <Route path="drink" element={ <Drink/> } />
           <Route path="price" element={ <Price/> } />
@@ -80,6 +92,7 @@ function App() {
           <Route path="group" element={ <Group/> } />
           <Route path="nation" element={ <Nation/> } />
 
+          {/* 흑석 Result Components */}
           <Route path="result" element={ <Result/> } />
           <Route path="result1" element={ <Result1/> } />
           <Route path="result2" element={ <Result2/> } />
@@ -96,6 +109,17 @@ function App() {
           <Route path="result13" element={ <Result13/> } />
           <Route path="result14" element={ <Result14/> } />
           <Route path="result15" element={ <Result15/> } />
+
+          {/* 상도 Result Components */}
+          <Route path="result16" element={ <Result16/> } />
+          <Route path="result17" element={ <Result17/> } />
+          <Route path="result18" element={ <Result18/> } />
+          <Route path="result19" element={ <Result19/> } />
+          <Route path="result20" element={ <Result20/> } />
+          <Route path="result21" element={ <Result21/> } />
+          <Route path="result22" element={ <Result22/> } />
+          <Route path="result23" element={ <Result23/> } />
+          <Route path="result24" element={ <Result24/> } />
         </Route>
       </Routes>
     </>

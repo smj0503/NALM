@@ -69,14 +69,14 @@ function Ingredients() {
         </div>
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
           dispatch(addIngredients('육류'));
-          navigate('/algorithm/result');
+          navigate('/algorithm/result24');
         }}>
           &nbsp;육류&nbsp;
         </button>
         &emsp;
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
           dispatch(addIngredients('해산물'));
-          navigate('/algorithm/result');
+          navigate('/algorithm/result24');
         }}>
           해산물
         </button>
@@ -92,21 +92,22 @@ function Ingredients() {
         </div>
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
           dispatch(addIngredients('육류'));
-          navigate('/algorithm/result');
+          navigate('/algorithm/result22');
         }}>
           &nbsp;육류&nbsp;
         </button>
         &emsp;
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
           dispatch(addIngredients('해산물'));
-          navigate('/algorithm/result');
+          navigate('/algorithm/result22');
         }}>
           해산물
         </button>
         &emsp;
         <button class="w-btn w-btn-pink" type="button" onClick={()=>{
-          // 데이터 안넘겨줌
-          navigate('/algorithm/result');
+          // 데이터 넘겨줌 : 'x'
+          dispatch(addIngredients('x'));
+          navigate('/algorithm/result22');
         }}>
           둘다 NO
         </button>

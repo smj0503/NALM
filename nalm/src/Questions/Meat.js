@@ -27,7 +27,7 @@ function Meat() {
       <button class="w-btn w-btn-pink" type="button" onClick={()=>{
         // 데이터 넘겨줌 : 'x'
         dispatch(addMeat('x'));
-        navigate('/algorithm/result');
+        navigate('/algorithm/result17');
       }}>
         아니요
       </button>
