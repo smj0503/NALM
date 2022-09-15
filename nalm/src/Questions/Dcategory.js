@@ -31,7 +31,7 @@ function Dcategory() {
         <div className='question'>
           <p>어떤 술로 가볼까요?</p>
         </div>
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           // 데이터 넘겨줌 : '양주'
           dispatch(addDcategory('양주'));
           navigate('/algorithm/result5');
@@ -39,7 +39,7 @@ function Dcategory() {
           와인 / 칵테일
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           // 데이터 넘겨줌 : '호프'
           dispatch(addDcategory('호프'));
           navigate('/algorithm/result5');
@@ -47,7 +47,7 @@ function Dcategory() {
           호프
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           // 데이터 넘겨줌 : '모두'
           dispatch(addDcategory('모두'));
           navigate('/algorithm/result5');
@@ -73,14 +73,14 @@ function Dcategory() {
         <div className='question'>
           <p>어떤 술로 가볼까요~?</p>
         </div>
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addDcategory('양주'));
           navigate('/algorithm/result7');
         }}>
           와인 / 칵테일
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           // 데이터 넘겨줌 : '이자카야'
           dispatch(addDcategory('이자카야'));
           navigate('/algorithm/result7');
@@ -88,14 +88,14 @@ function Dcategory() {
           이자카야
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addDcategory('호프'));
           navigate('/algorithm/result7');
         }}>
           호프
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addDcategory('모두'));
           navigate('/algorithm/result7');
         }}>
@@ -119,21 +119,21 @@ function Dcategory() {
         <div className='question'>
           <p>어떤 술로 가볼까요~?</p>
         </div>
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addDcategory('양주'));
           navigate('/algorithm/result23');
         }}>
           와인 / 칵테일
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addDcategory('이자카야'));
           navigate('/algorithm/result23');
         }}>
           이자카야
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addDcategory('호프'));
           navigate('/algorithm/result23');
         }}>

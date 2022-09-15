@@ -33,7 +33,7 @@ function Result7() {
   return (
     <div className="App">
       <div className='result'>
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           axios.get('/data')
           .then((result)=>{
             let copy = [...list, ...result.data];

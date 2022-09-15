@@ -32,7 +32,7 @@ function Group() {
         <div className='question'>
           <p>몇 명이서 먹나요?</p>
         </div>
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           // 데이터 안넘겨줌
           dispatch(addGroup(""));
           navigate('/algorithm/result3');
@@ -40,7 +40,7 @@ function Group() {
           2~4명
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           // 데이터 넘겨줌 : 'o'
           dispatch(addGroup("o"));
           navigate('/algorithm/result3');
@@ -65,14 +65,14 @@ function Group() {
         <div className='question'>
           <p>몇 명이서 먹나요?</p>
         </div>
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addGroup(""));
           navigate('/algorithm/mood');
         }}>
           2~4명
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addGroup("o"));
           navigate('/algorithm/result8');
         }}>
@@ -97,14 +97,14 @@ function Group() {
         <div className='question'>
           <p>몇 명이서 먹나요?</p>
         </div>
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addGroup(""));
           navigate('/algorithm/result17');
         }}>
           2~4명
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           // 데이터 넘겨줌 : 'o'
           dispatch(addGroup("o"));
           navigate('/algorithm/result16');
@@ -129,7 +129,7 @@ function Group() {
         <div className='question'>
           <p>몇 명이서 먹나요?</p>
         </div>
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           // 데이터 안넘겨줌
           dispatch(addGroup(""));
           navigate('/algorithm/ingredients');
@@ -137,7 +137,7 @@ function Group() {
           2~4명
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addGroup("o"));
           navigate('/algorithm/result21');
         }}>

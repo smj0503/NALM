@@ -1,12 +1,13 @@
 import '../App.css';
 import axios from 'axios';
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
+import Place1 from "../Places_Heukseok/Place1.js"
+import { useNavigate } from 'react-router-dom';
 import {addAmount, addDcategory, addDrink, addExperience,
   addGroup, addIngredients, addKcategory1, addKcategory2,
-  addLocation, addMeat, addMood, addNation, addPrice, addTime} from "../store.js";
-import Place1 from "../Places_Heukseok/Place1.js"
+  addLocation, addMeat, addMood, addNation, 
+  addPrice, addTime} from "../store.js";
 import styled from "styled-components";
 
 const Home = styled.button`
@@ -33,7 +34,7 @@ function Result1() {
   return (
     <div className="App">
       <div className='result'>
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           axios.get('/data')
           .then((result)=>{
             let copy = [...list, ...result.data];

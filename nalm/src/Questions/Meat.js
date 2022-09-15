@@ -25,7 +25,7 @@ function Meat() {
       <div className='question'>
         <p>고깃집을 원하나요??</p>
       </div>
-      <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+      <button class="w-btn" type="button" onClick={()=>{
         // 데이터 넘겨줌 : 'o'
         dispatch(addMeat('o'));
         navigate('/algorithm/group');
@@ -33,7 +33,7 @@ function Meat() {
         네
       </button>
       &emsp;
-      <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+      <button class="w-btn" type="button" onClick={()=>{
         // 데이터 넘겨줌 : 'x'
         dispatch(addMeat('x'));
         navigate('/algorithm/result17');

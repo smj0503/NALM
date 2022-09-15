@@ -26,7 +26,7 @@ function Location() {
       <div className='question'>
         <p>어디로 가볼까요?</p>
       </div>
-      <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+      <button class="w-btn" type="button" onClick={()=>{
         // 데이터 넘겨줌 : '흑석'
         dispatch(addLocation('흑석'));
         navigate('/algorithm/drink');
@@ -34,7 +34,7 @@ function Location() {
         흑석
       </button>
       &emsp;
-      <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+      <button class="w-btn" type="button" onClick={()=>{
         // 데이터 넘겨줌 : '상도'
         dispatch(addLocation('상도'));
         navigate('/algorithm/drink');

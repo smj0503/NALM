@@ -30,7 +30,7 @@ function Experiecne() {
         <div className='question'>
           <p>지금 더 끌리는 곳은?</p>
         </div>
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           // 데이터 넘겨줌 : '익숙함'
           dispatch(addExperience('익숙함'));
           navigate('/algorithm/ingredients');
@@ -38,7 +38,7 @@ function Experiecne() {
           익숙한 곳
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           // 데이터 넘겨줌 : '색다름'
           dispatch(addExperience('색다름'));
           navigate('/algorithm/nation');
@@ -64,14 +64,14 @@ function Experiecne() {
         <div className='question'>
           <p>지금 더 끌리는 곳은?</p>
         </div>
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addExperience('익숙함'));
           navigate('/algorithm/result13');
         }}>
           익숙한 곳
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addExperience('색다름'));
           navigate('/algorithm/result13');
         }}>
@@ -95,14 +95,14 @@ function Experiecne() {
         <div className='question'>
           <p>지금 더 끌리는 곳은?</p>
         </div>
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addExperience('익숙함'));
           navigate('/algorithm/mood');
         }}>
           익숙한 곳
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addExperience('색다름'));
           navigate('/algorithm/mood');
         }}>
@@ -127,14 +127,14 @@ function Experiecne() {
         <div className='question'>
           <p>지금 더 끌리는 곳은?</p>
         </div>
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addExperience('익숙함'));
           navigate('/algorithm/result24');
         }}>
           익숙한 곳
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addExperience('색다름'));
           navigate('/algorithm/result24');
         }}>

@@ -30,7 +30,7 @@ function Price() {
         <div className='question'>
           <p>당신의 예산은?</p>
         </div>
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           // 데이터 넘겨줌 : '비쌈'
           dispatch(addPrice('비쌈'));
           navigate('/algorithm/experience');
@@ -38,7 +38,7 @@ function Price() {
           여유있어요
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           // 데이터 넘겨줌 : '저렴'
           dispatch(addPrice('저렴'));
           navigate('/algorithm/group');
@@ -63,14 +63,14 @@ function Price() {
         <div className='question'>
           <p>당신의 예산은?</p>
         </div>
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addPrice('비쌈'));
           navigate('/algorithm/ingredients');
         }}>
           여유있어요
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addPrice('저렴'));
           navigate('/algorithm/nation');
         }}>
@@ -94,14 +94,14 @@ function Price() {
         <div className='question'>
           <p>당신의 예산은?</p>
         </div>
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addPrice('비쌈'));
           navigate('/algorithm/nation');
         }}>
           여유있어요
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addPrice('저렴'));
           navigate('/algorithm/mood');
         }}>
@@ -125,14 +125,14 @@ function Price() {
         <div className='question'>
           <p>당신의 예산은?</p>
         </div>
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addPrice('비쌈'));
           navigate('/algorithm/ingredients');
         }}>
           여유있어요
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addPrice('저렴'));
           navigate('/algorithm/nation');
         }}>

@@ -74,7 +74,7 @@ function App() {
             <div className='question'>
               <p>간단한 물음에 답하며 먹고싶은 메뉴를 떠올려보세요 !</p>
             </div>
-            <button class="w-btn w-btn-pink" type="button" onClick={()=>{navigate('/algorithm/location')}}>
+            <button class="w-btn" type="button" onClick={()=>{navigate('/algorithm/location')}}>
               GO!
             </button>
           </div>

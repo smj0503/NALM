@@ -25,7 +25,7 @@ function Kcategory2() {
       <div className='question'>
         <p>먹고 싶은 음식은?</p>
       </div>
-      <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+      <button class="w-btn" type="button" onClick={()=>{
         // 데이터 넘겨줌 : '돈까스'
         dispatch(addKcategory2('돈까스'));
         navigate('/algorithm/result15');
@@ -33,7 +33,7 @@ function Kcategory2() {
         돈까스
       </button>
       &emsp;
-      <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+      <button class="w-btn" type="button" onClick={()=>{
         // 데이터 넘겨줌 : '떡볶이'
         dispatch(addKcategory2('떡볶이'));
         navigate('/algorithm/result15');
@@ -41,7 +41,7 @@ function Kcategory2() {
         떡볶이
       </button>
       &emsp;
-      <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+      <button class="w-btn" type="button" onClick={()=>{
         // 데이터 넘겨줌 : '국수'
         dispatch(addKcategory2('국수'));
         navigate('/algorithm/result15');
@@ -49,7 +49,7 @@ function Kcategory2() {
         국수류
       </button>
       &emsp;
-      <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+      <button class="w-btn" type="button" onClick={()=>{
         // 데이터 넘겨줌 : '아무거나'
         dispatch(addKcategory2('아무거나'));
         navigate('/algorithm/result15');

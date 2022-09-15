@@ -31,7 +31,7 @@ function Nation() {
         <div className='question'>
           <p>어느 나라로 가볼까요~?</p>
         </div>
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           // 데이터 넘겨줌 : '한식'
           dispatch(addNation('한식'));
           navigate('/algorithm/result4');
@@ -39,7 +39,7 @@ function Nation() {
           &nbsp;한식&nbsp;
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           // 데이터 넘겨줌 : '중식'
           dispatch(addNation('중식'));
           navigate('/algorithm/result4');
@@ -47,7 +47,7 @@ function Nation() {
           &nbsp;중식&nbsp;
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           // 데이터 넘겨줌 : '일식'
           dispatch(addNation('일식'));
           navigate('/algorithm/result4');
@@ -55,7 +55,7 @@ function Nation() {
           &nbsp;일식&nbsp;
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           // 데이터 넘겨줌 : '미국'
           dispatch(addNation('미국'));
           navigate('/algorithm/result4');
@@ -63,7 +63,7 @@ function Nation() {
           &nbsp;미국&nbsp;
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           // 데이터 넘겨줌 : '이태리'
           dispatch(addNation('이태리'));
           navigate('/algorithm/drink_category');
@@ -71,7 +71,7 @@ function Nation() {
           이태리
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addNation(''));
           navigate('/algorithm/mood');
         }}>
@@ -95,35 +95,35 @@ function Nation() {
         <div className='question'>
           <p>어느 나라로 가볼까요~?</p>
         </div>
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addNation('한식'));
           navigate('/algorithm/time');
         }}>
           &nbsp;한식&nbsp;
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addNation('중식'));
           navigate('/algorithm/experience');
         }}>
           &nbsp;중식&nbsp;
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addNation('일식'));
           navigate('/algorithm/experience');
         }}>
           &nbsp;일식&nbsp;
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addNation('미국'));
           navigate('/algorithm/result12');
         }}>
           &nbsp;미국&nbsp;
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addNation('이태리'));
           navigate('/algorithm/result12');
         }}>
@@ -147,42 +147,42 @@ function Nation() {
         <div className='question'>
           <p>어느 나라로 가볼까요~?</p>
         </div>
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addNation('한식'));
           navigate('/algorithm/meat');
         }}>
           &nbsp;한식&nbsp;
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addNation('중식'));
           navigate('/algorithm/result18');
         }}>
           &nbsp;중식&nbsp;
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addNation('일식'));
           navigate('/algorithm/mood');
         }}>
           &nbsp;일식&nbsp;
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addNation('미국'));
           navigate('/algorithm/result18');
         }}>
           &nbsp;미국&nbsp;
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addNation('이태리'));
           navigate('/algorithm/result18');
         }}>
           이태리
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addNation(''));
           navigate('/algorithm/experience');
         }}>
@@ -206,28 +206,28 @@ function Nation() {
         <div className='question'>
           <p>어느 나라로 가볼까요~?</p>
         </div>
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addNation('한식'));
           navigate('/algorithm/time');
         }}>
           한식
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addNation('중식'));
           navigate('/algorithm/result24');
         }}>
           중식
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addNation('일식'));
           navigate('/algorithm/result24');
         }}>
           일식
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addNation('미국'));
           navigate('/algorithm/result24');
         }}>

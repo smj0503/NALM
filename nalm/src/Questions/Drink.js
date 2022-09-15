@@ -25,7 +25,7 @@ function Drink() {
       <div className='question'>
         <p>술 한잔 어때요?</p>
       </div>
-      <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+      <button class="w-btn" type="button" onClick={()=>{
         // 데이터 넘겨줌 : 'o'
         dispatch(addDrink('o'));
         navigate('/algorithm/price');
@@ -33,7 +33,7 @@ function Drink() {
         &nbsp;&emsp;좋아요&emsp;&nbsp;
       </button>
       &emsp;
-      <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+      <button class="w-btn" type="button" onClick={()=>{
         // 데이터 넘겨줌 : 'x'
         dispatch(addDrink('x'));
         navigate('/algorithm/price');

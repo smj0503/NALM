@@ -32,7 +32,7 @@ function Mood() {
         <div className='question'>
           <p>어떤 분위기가 좋은가요?</p>
         </div>
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           // 데이터 넘겨줌 : '조용'
           dispatch(addMood('조용'));
           navigate('/algorithm/result2');
@@ -40,7 +40,7 @@ function Mood() {
           조용한 곳
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           // 데이터 넘겨줌 : '신남'
           dispatch(addMood('신남'));
           navigate('/algorithm/group');
@@ -66,14 +66,14 @@ function Mood() {
         <div className='question'>
           <p>어떤 분위기가 좋은가요?</p>
         </div>
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addMood('조용'));
           navigate('/algorithm/drink_category');
         }}>
           조용한 곳
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addMood('신남'));
           navigate('/algorithm/result6');
         }}>
@@ -98,14 +98,14 @@ function Mood() {
         <div className='question'>
           <p>어떤 분위기가 좋은가요?</p>
         </div>
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addMood('조용'));
           navigate('/algorithm/result9');
         }}>
           조용한 곳
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addMood('신남'));
           navigate('/algorithm/result9');
         }}>
@@ -130,14 +130,14 @@ function Mood() {
         <div className='question'>
           <p>어떤 분위기가 좋은가요?</p>
         </div>
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addMood('조용'));
           navigate('/algorithm/result19');
         }}>
           조용한 곳
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addMood('신남'));
           navigate('/algorithm/result19');
         }}>
@@ -162,14 +162,14 @@ function Mood() {
         <div className='question'>
           <p>어떤 분위기가 좋은가요?</p>
         </div>
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addMood('조용'));
           navigate('/algorithm/result20');
         }}>
           조용한 곳
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addMood('신남'));
           navigate('/algorithm/group');
         }}>
@@ -194,14 +194,14 @@ function Mood() {
         <div className='question'>
           <p>어떤 분위기가 좋은가요?</p>
         </div>
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addMood('조용'));
           navigate('/algorithm/drink_category');
         }}>
           조용한 곳
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addMood('신남'));
           navigate('/algorithm/result20');
         }}>
@@ -225,14 +225,14 @@ function Mood() {
         <div className='question'>
           <p>어떤 분위기가 좋은가요?</p>
         </div>
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addMood('조용'));
           navigate('/algorithm/experience');
         }}>
           조용한 곳
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addMood('신남'));
           navigate('/algorithm/result24');
         }}>

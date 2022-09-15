@@ -25,7 +25,7 @@ function Kcategory1() {
       <div className='question'>
         <p>먹고 싶은 음식은?</p>
       </div>
-      <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+      <button class="w-btn" type="button" onClick={()=>{
         // 데이터 넘겨줌 : '찌개'
         dispatch(addKcategory1('찌개'));
         navigate('/algorithm/result14');
@@ -33,7 +33,7 @@ function Kcategory1() {
         찌개나 국물류
       </button>
       &emsp;
-      <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+      <button class="w-btn" type="button" onClick={()=>{
         // 데이터 넘겨줌 : '백반'
         dispatch(addKcategory1('백반'));
         navigate('/algorithm/result14');

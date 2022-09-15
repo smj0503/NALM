@@ -31,15 +31,15 @@ function Amount() {
         <div className='question'>
           <p>음식 양은 어느정도가 괜찮을까요?</p>
         </div>
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           // 데이터 넘겨줌 : '적당'
           dispatch(addAmount('적당'));
           navigate('/algorithm/result11');
         }}>
-          적당히 먹을래요
+          &ensp;적당히 먹을래요&ensp;
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           // 데이터 넘겨줌 : '많음'
           dispatch(addAmount('많음'));
           navigate('/algorithm/result11');
@@ -64,14 +64,14 @@ function Amount() {
         <div className='question'>
           <p>음식 양은 어느정도가 괜찮을까요?</p>
         </div>
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addAmount('적당'));
           navigate('/algorithm/result24');
         }}>
-          적당히 먹을래요
+          &ensp;적당히 먹을래요&ensp;
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addAmount('많음'));
           navigate('/algorithm/result24');
         }}>

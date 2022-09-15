@@ -31,7 +31,7 @@ function Ingredients() {
         <div className='question'>
           <p>더 땡기는 것은 어느 쪽?</p>
         </div>
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           // 데이터 넘겨줌 : '육류'
           dispatch(addIngredients('육류'));
           navigate('/algorithm/mood');
@@ -39,7 +39,7 @@ function Ingredients() {
           &nbsp;육류&nbsp;
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           // 데이터 넘겨줌 : '해산물'
           dispatch(addIngredients('해산물'));
           navigate('/algorithm/result1');
@@ -64,14 +64,14 @@ function Ingredients() {
         <div className='question'>
           <p>더 땡기는 것은 어느 쪽?</p>
         </div>
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addIngredients('육류'));
           navigate('/algorithm/amount');
         }}>
           &nbsp;육류&nbsp;
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addIngredients('해산물'));
           navigate('/algorithm/result10');
         }}>
@@ -95,14 +95,14 @@ function Ingredients() {
         <div className='question'>
           <p>더 땡기는 것은 어느 쪽?</p>
         </div>
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addIngredients('육류'));
           navigate('/algorithm/result24');
         }}>
           &nbsp;육류&nbsp;
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addIngredients('해산물'));
           navigate('/algorithm/result24');
         }}>
@@ -126,21 +126,21 @@ function Ingredients() {
         <div className='question'>
           <p>더 땡기는 것은 어느 쪽?</p>
         </div>
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addIngredients('육류'));
           navigate('/algorithm/result22');
         }}>
           &nbsp;육류&nbsp;
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           dispatch(addIngredients('해산물'));
           navigate('/algorithm/result22');
         }}>
           해산물
         </button>
         &emsp;
-        <button class="w-btn w-btn-pink" type="button" onClick={()=>{
+        <button class="w-btn" type="button" onClick={()=>{
           // 데이터 넘겨줌 : 'x'
           dispatch(addIngredients('x'));
           navigate('/algorithm/result22');
