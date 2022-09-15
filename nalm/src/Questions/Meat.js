@@ -30,7 +30,7 @@ function Meat() {
         dispatch(addMeat('o'));
         navigate('/algorithm/group');
       }}>
-        네
+        &emsp;네&emsp;
       </button>
       &emsp;
       <button class="w-btn" type="button" onClick={()=>{

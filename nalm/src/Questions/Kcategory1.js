@@ -38,7 +38,7 @@ function Kcategory1() {
         dispatch(addKcategory1('백반'));
         navigate('/algorithm/result14');
       }}>
-        백반 종류
+        &emsp;백반 종류&emsp;
       </button>
       <div className='back'>
           <BackBtn onClick={()=>{ 

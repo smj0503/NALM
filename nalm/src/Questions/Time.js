@@ -44,7 +44,7 @@ function Time() {
           dispatch(addTime('2'));
           navigate('/algorithm/kor_category1');
         }}>
-          적당히
+          &emsp;적당히&emsp;
         </button>
         <div className='back'>
           <BackBtn onClick={()=>{ 
@@ -75,7 +75,7 @@ function Time() {
           dispatch(addTime('2'));
           navigate('/algorithm/amount');
         }}>
-          적당히
+          &emsp;적당히&emsp;
         </button>
         <div className='back'>
           <BackBtn onClick={()=>{ 

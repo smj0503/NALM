@@ -145,7 +145,7 @@ function Ingredients() {
           dispatch(addIngredients('x'));
           navigate('/algorithm/result22');
         }}>
-          둘다 NO
+          둘다 X
         </button>
         <div className='back'>
           <BackBtn onClick={()=>{ 

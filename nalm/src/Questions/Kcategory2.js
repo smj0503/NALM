@@ -30,7 +30,7 @@ function Kcategory2() {
         dispatch(addKcategory2('돈까스'));
         navigate('/algorithm/result15');
       }}>
-        돈까스
+        &emsp;&emsp;돈까스&emsp;&emsp;
       </button>
       &emsp;
       <button class="w-btn" type="button" onClick={()=>{
@@ -38,7 +38,7 @@ function Kcategory2() {
         dispatch(addKcategory2('떡볶이'));
         navigate('/algorithm/result15');
       }}>
-        떡볶이
+        &emsp;&emsp;떡볶이&emsp;&emsp;
       </button>
       &emsp;
       <button class="w-btn" type="button" onClick={()=>{
@@ -46,7 +46,7 @@ function Kcategory2() {
         dispatch(addKcategory2('국수'));
         navigate('/algorithm/result15');
       }}>
-        국수류
+        &emsp;&emsp;국수류&emsp;&emsp;
       </button>
       &emsp;
       <button class="w-btn" type="button" onClick={()=>{

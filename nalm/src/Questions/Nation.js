@@ -36,7 +36,7 @@ function Nation() {
           dispatch(addNation('한식'));
           navigate('/algorithm/result4');
         }}>
-          &nbsp;한식&nbsp;
+          &nbsp;&emsp;한식&emsp;&nbsp;
         </button>
         &emsp;
         <button class="w-btn" type="button" onClick={()=>{
@@ -44,7 +44,7 @@ function Nation() {
           dispatch(addNation('중식'));
           navigate('/algorithm/result4');
         }}>
-          &nbsp;중식&nbsp;
+          &nbsp;&emsp;중식&emsp;&nbsp;
         </button>
         &emsp;
         <button class="w-btn" type="button" onClick={()=>{
@@ -52,7 +52,7 @@ function Nation() {
           dispatch(addNation('일식'));
           navigate('/algorithm/result4');
         }}>
-          &nbsp;일식&nbsp;
+          &nbsp;&emsp;일식&emsp;&nbsp;
         </button>
         &emsp;
         <button class="w-btn" type="button" onClick={()=>{
@@ -60,7 +60,7 @@ function Nation() {
           dispatch(addNation('미국'));
           navigate('/algorithm/result4');
         }}>
-          &nbsp;미국&nbsp;
+          &nbsp;&emsp;미국&emsp;&nbsp;
         </button>
         &emsp;
         <button class="w-btn" type="button" onClick={()=>{
@@ -68,7 +68,7 @@ function Nation() {
           dispatch(addNation('이태리'));
           navigate('/algorithm/drink_category');
         }}>
-          이태리
+          &emsp;이태리&emsp;
         </button>
         &emsp;
         <button class="w-btn" type="button" onClick={()=>{
@@ -151,35 +151,35 @@ function Nation() {
           dispatch(addNation('한식'));
           navigate('/algorithm/meat');
         }}>
-          &nbsp;한식&nbsp;
+          &nbsp;&emsp;한식&emsp;&nbsp;
         </button>
         &emsp;
         <button class="w-btn" type="button" onClick={()=>{
           dispatch(addNation('중식'));
           navigate('/algorithm/result18');
         }}>
-          &nbsp;중식&nbsp;
+          &nbsp;&emsp;중식&emsp;&nbsp;
         </button>
         &emsp;
         <button class="w-btn" type="button" onClick={()=>{
           dispatch(addNation('일식'));
           navigate('/algorithm/mood');
         }}>
-          &nbsp;일식&nbsp;
+          &nbsp;&emsp;일식&emsp;&nbsp;
         </button>
         &emsp;
         <button class="w-btn" type="button" onClick={()=>{
           dispatch(addNation('미국'));
           navigate('/algorithm/result18');
         }}>
-          &nbsp;미국&nbsp;
+          &nbsp;&emsp;미국&emsp;&nbsp;
         </button>
         &emsp;
         <button class="w-btn" type="button" onClick={()=>{
           dispatch(addNation('이태리'));
           navigate('/algorithm/result18');
         }}>
-          이태리
+          &emsp;이태리&emsp;
         </button>
         &emsp;
         <button class="w-btn" type="button" onClick={()=>{

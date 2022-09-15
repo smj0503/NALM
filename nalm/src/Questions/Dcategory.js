@@ -36,7 +36,7 @@ function Dcategory() {
           dispatch(addDcategory('양주'));
           navigate('/algorithm/result5');
         }}>
-          와인 / 칵테일
+          &nbsp;와인/칵테일&nbsp;
         </button>
         &emsp;
         <button class="w-btn" type="button" onClick={()=>{
@@ -44,7 +44,7 @@ function Dcategory() {
           dispatch(addDcategory('호프'));
           navigate('/algorithm/result5');
         }}>
-          호프
+          &emsp;&emsp;호프&emsp;&emsp;
         </button>
         &emsp;
         <button class="w-btn" type="button" onClick={()=>{
@@ -77,7 +77,7 @@ function Dcategory() {
           dispatch(addDcategory('양주'));
           navigate('/algorithm/result7');
         }}>
-          와인 / 칵테일
+          &nbsp;와인/칵테일&nbsp;
         </button>
         &emsp;
         <button class="w-btn" type="button" onClick={()=>{
@@ -85,14 +85,14 @@ function Dcategory() {
           dispatch(addDcategory('이자카야'));
           navigate('/algorithm/result7');
         }}>
-          이자카야
+          &emsp;이자카야&emsp;
         </button>
         &emsp;
         <button class="w-btn" type="button" onClick={()=>{
           dispatch(addDcategory('호프'));
           navigate('/algorithm/result7');
         }}>
-          호프
+          &emsp;&emsp;호프&emsp;&emsp;
         </button>
         &emsp;
         <button class="w-btn" type="button" onClick={()=>{

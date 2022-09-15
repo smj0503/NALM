@@ -37,7 +37,7 @@ function Group() {
           dispatch(addGroup(""));
           navigate('/algorithm/result3');
         }}>
-          2~4명
+          2 ~ 4 명
         </button>
         &emsp;
         <button class="w-btn" type="button" onClick={()=>{
@@ -69,7 +69,7 @@ function Group() {
           dispatch(addGroup(""));
           navigate('/algorithm/mood');
         }}>
-          2~4명
+          2 ~ 4 명
         </button>
         &emsp;
         <button class="w-btn" type="button" onClick={()=>{
@@ -101,7 +101,7 @@ function Group() {
           dispatch(addGroup(""));
           navigate('/algorithm/result17');
         }}>
-          2~4명
+          2 ~ 4 명
         </button>
         &emsp;
         <button class="w-btn" type="button" onClick={()=>{
@@ -134,7 +134,7 @@ function Group() {
           dispatch(addGroup(""));
           navigate('/algorithm/ingredients');
         }}>
-          2~4명
+          2 ~ 4 명
         </button>
         &emsp;
         <button class="w-btn" type="button" onClick={()=>{
