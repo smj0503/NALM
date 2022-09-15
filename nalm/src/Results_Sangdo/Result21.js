@@ -2,12 +2,31 @@ import '../App.css';
 import axios from 'axios';
 import { useState } from 'react';
 import { useDispatch, useSelector } from "react-redux";
-
 import Place21 from "../Places_Sangdo/Place21.js"
+import { useNavigate } from 'react-router-dom';
+import {addAmount, addDcategory, addDrink, addExperience,
+  addGroup, addIngredients, addKcategory1, addKcategory2,
+  addLocation, addMeat, addMood, addNation, 
+  addPrice, addTime} from "../store.js";
+import styled from "styled-components";
+
+const Home = styled.button`
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+  color: #ff7373;
+  :hover {
+    transform: scale(1.1);
+  }
+  transition: .2s;
+`;
 
 function Result21() {
   // DB에서 불러온 데이터 담아 줄 state
   let [list, setList] = useState([]);
+
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   let condition = useSelector((state)=> state.condition);
   console.log(condition);
@@ -33,6 +52,27 @@ function Result21() {
           return(<Place21 list={list[i]} i={i+1}/>)
         })}
       </p>
+      <div className='back'>
+        <Home onClick={()=>{
+          dispatch(addAmount(''));
+          dispatch(addPrice(''));
+          dispatch(addDcategory(''));
+          dispatch(addDrink(''));
+          dispatch(addExperience(''));
+          dispatch(addGroup(''));
+          dispatch(addIngredients(''));
+          dispatch(addKcategory1(''));
+          dispatch(addKcategory2(''));
+          dispatch(addLocation(''));
+          dispatch(addMeat(''));
+          dispatch(addMood(''));
+          dispatch(addNation(''));
+          dispatch(addTime(''));
+          navigate('/');
+        }}>
+          Home
+        </Home>
+      </div>
     </div>
   );
 }
