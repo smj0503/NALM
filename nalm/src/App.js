@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Routes, Route, Link, useNavigate } from 'react-router-dom';
+import { Routes, Route, Link, useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from "../src/img/logo.png"
 import character from "../src/img/LM2.png"
@@ -50,9 +50,14 @@ import Result22 from './Results_Sangdo/Result22.js';
 import Result23 from './Results_Sangdo/Result23.js';
 import Result24 from './Results_Sangdo/Result24.js';
 
+import { useSelector } from "react-redux";
+
 function App() {
 
   const navigate = useNavigate();
+
+  let condition = useSelector((state)=> state.condition);
+  console.log(condition);
 
   return (
     <>

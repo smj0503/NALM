@@ -2,6 +2,18 @@ import '../App.css';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
 import { addNation } from "../store.js";
+import styled from "styled-components";
+
+const BackBtn = styled.button`
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+  color: #ff7373;
+  :hover {
+    transform: scale(1.1);
+  }
+  transition: .2s;
+`;
 
 function Nation() {
 
@@ -65,6 +77,14 @@ function Nation() {
         }}>
           상관없어요
         </button>
+        <div className='back'>
+          <BackBtn onClick={()=>{ 
+            dispatch(addNation(''));
+            navigate(-1);
+          }}>
+            Back
+          </BackBtn>
+        </div>
       </div>
     );
   }
@@ -109,6 +129,14 @@ function Nation() {
         }}>
           이태리
         </button>
+        <div className='back'>
+          <BackBtn onClick={()=>{ 
+            dispatch(addNation(''));
+            navigate(-1);
+          }}>
+            Back
+          </BackBtn>
+        </div>
       </div>
     );
   }
@@ -160,6 +188,14 @@ function Nation() {
         }}>
           상관없어요
         </button>
+        <div className='back'>
+          <BackBtn onClick={()=>{ 
+            dispatch(addNation(''));
+            navigate(-1);
+          }}>
+            Back
+          </BackBtn>
+        </div>
       </div>
     );
   }
@@ -197,6 +233,14 @@ function Nation() {
         }}>
           미국
         </button>
+        <div className='back'>
+          <BackBtn onClick={()=>{ 
+            dispatch(addNation(''));
+            navigate(-1);
+          }}>
+            Back
+          </BackBtn>
+        </div>
       </div>
     );
   }

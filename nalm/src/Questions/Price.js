@@ -2,6 +2,18 @@ import '../App.css';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
 import { addPrice } from '../store';
+import styled from "styled-components";
+
+const BackBtn = styled.button`
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+  color: #ff7373;
+  :hover {
+    transform: scale(1.1);
+  }
+  transition: .2s;
+`;
 
 function Price() {
 
@@ -33,6 +45,14 @@ function Price() {
         }}>
           빡빡해요..
         </button>
+        <div className='back'>
+          <BackBtn onClick={()=>{ 
+            dispatch(addPrice(''));
+            navigate(-1);
+          }}>
+            Back
+          </BackBtn>
+        </div>
       </div>
     );
   }
@@ -56,6 +76,14 @@ function Price() {
         }}>
           빡빡해요..
         </button>
+        <div className='back'>
+          <BackBtn onClick={()=>{ 
+            dispatch(addPrice(''));
+            navigate(-1);
+          }}>
+            Back
+          </BackBtn>
+        </div>
       </div>
     );
   }
@@ -79,6 +107,14 @@ function Price() {
         }}>
           빡빡해요..
         </button>
+        <div className='back'>
+          <BackBtn onClick={()=>{ 
+            dispatch(addPrice(''));
+            navigate(-1);
+          }}>
+            Back
+          </BackBtn>
+        </div>
       </div>
     );
   }
@@ -102,6 +138,14 @@ function Price() {
         }}>
           빡빡해요..
         </button>
+        <div className='back'>
+          <BackBtn onClick={()=>{ 
+            dispatch(addPrice(''));
+            navigate(-1);
+          }}>
+            Back
+          </BackBtn>
+        </div>
       </div>
     );
   }

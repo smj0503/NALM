@@ -2,6 +2,18 @@ import '../App.css';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
 import { addTime } from "../store.js";
+import styled from "styled-components";
+
+const BackBtn = styled.button`
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+  color: #ff7373;
+  :hover {
+    transform: scale(1.1);
+  }
+  transition: .2s;
+`;
 
 function Time() {
 
@@ -34,6 +46,14 @@ function Time() {
         }}>
           적당히
         </button>
+        <div className='back'>
+          <BackBtn onClick={()=>{ 
+            dispatch(addTime(''));
+            navigate(-1);
+          }}>
+            Back
+          </BackBtn>
+        </div>
       </div>
     );
   }
@@ -57,6 +77,14 @@ function Time() {
         }}>
           적당히
         </button>
+        <div className='back'>
+          <BackBtn onClick={()=>{ 
+            dispatch(addTime(''));
+            navigate(-1);
+          }}>
+            Back
+          </BackBtn>
+        </div>
       </div>
     );
   }

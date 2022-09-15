@@ -2,6 +2,18 @@ import '../App.css';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
 import { addIngredients } from "../store.js";
+import styled from "styled-components";
+
+const BackBtn = styled.button`
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+  color: #ff7373;
+  :hover {
+    transform: scale(1.1);
+  }
+  transition: .2s;
+`;
 
 function Ingredients() {
 
@@ -34,6 +46,14 @@ function Ingredients() {
         }}>
           해산물
         </button>
+        <div className='back'>
+          <BackBtn onClick={()=>{ 
+            dispatch(addIngredients(''));
+            navigate(-1);
+          }}>
+            Back
+          </BackBtn>
+        </div>
       </div>
     );
   }
@@ -57,6 +77,14 @@ function Ingredients() {
         }}>
           해산물
         </button>
+        <div className='back'>
+          <BackBtn onClick={()=>{ 
+            dispatch(addIngredients(''));
+            navigate(-1);
+          }}>
+            Back
+          </BackBtn>
+        </div>
       </div>
     );
   }
@@ -80,6 +108,14 @@ function Ingredients() {
         }}>
           해산물
         </button>
+        <div className='back'>
+          <BackBtn onClick={()=>{ 
+            dispatch(addIngredients(''));
+            navigate(-1);
+          }}>
+            Back
+          </BackBtn>
+        </div>
       </div>
     );
   }
@@ -111,6 +147,14 @@ function Ingredients() {
         }}>
           둘다 NO
         </button>
+        <div className='back'>
+          <BackBtn onClick={()=>{ 
+            dispatch(addIngredients(''));
+            navigate(-1);
+          }}>
+            Back
+          </BackBtn>
+        </div>
       </div>
     );
   }

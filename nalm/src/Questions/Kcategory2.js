@@ -1,14 +1,23 @@
 import '../App.css';
 import { useNavigate } from 'react-router-dom';
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { addKcategory2 } from "../store.js";
+import styled from "styled-components";
+
+const BackBtn = styled.button`
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+  color: #ff7373;
+  :hover {
+    transform: scale(1.1);
+  }
+  transition: .2s;
+`;
 
 function Kcategory2() {
 
   const navigate = useNavigate();
-
-  // Redux store에서 condition state 가져옴
-  let condition = useSelector((state)=> state.condition);
   const dispatch = useDispatch();
   
   return (
@@ -47,6 +56,14 @@ function Kcategory2() {
       }}>
         김밥같은 간편식
       </button>
+      <div className='back'>
+          <BackBtn onClick={()=>{ 
+            dispatch(addKcategory2(''));
+            navigate(-1);
+          }}>
+            Back
+          </BackBtn>
+        </div>
     </div>
   );
 }

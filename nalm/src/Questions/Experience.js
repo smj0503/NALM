@@ -2,6 +2,18 @@ import '../App.css';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
 import { addExperience } from '../store';
+import styled from "styled-components";
+
+const BackBtn = styled.button`
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+  color: #ff7373;
+  :hover {
+    transform: scale(1.1);
+  }
+  transition: .2s;
+`;
 
 function Experiecne() {
 
@@ -33,6 +45,14 @@ function Experiecne() {
         }}>
           색다른 곳
         </button>
+        <div className='back'>
+          <BackBtn onClick={()=>{ 
+            dispatch(addExperience(''));
+            navigate(-1);
+          }}>
+            Back
+          </BackBtn>
+        </div>
       </div>
     );
   }
@@ -57,6 +77,14 @@ function Experiecne() {
         }}>
           색다른 곳
         </button>
+        <div className='back'>
+          <BackBtn onClick={()=>{ 
+            dispatch(addExperience(''));
+            navigate(-1);
+          }}>
+            Back
+          </BackBtn>
+        </div>
       </div>
     );
   }
@@ -80,6 +108,14 @@ function Experiecne() {
         }}>
           색다른 곳
         </button>
+        <div className='back'>
+          <BackBtn onClick={()=>{ 
+            dispatch(addExperience(''));
+            navigate(-1);
+          }}>
+            Back
+          </BackBtn>
+        </div>
       </div>
     );
   }
@@ -104,6 +140,14 @@ function Experiecne() {
         }}>
           색다른 곳
         </button>
+        <div className='back'>
+          <BackBtn onClick={()=>{ 
+            dispatch(addExperience(''));
+            navigate(-1);
+          }}>
+            Back
+          </BackBtn>
+        </div>
       </div>
     );
   }
