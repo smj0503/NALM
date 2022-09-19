@@ -51,7 +51,16 @@ function Result14() {
           return(<Place14 list={list[i]} i={i+1}/>)
         })}
       </p>
-      <div className='back'>
+      <div className='back inline'>
+        <Home onClick={()=>{
+          dispatch(addKcategory1(''));
+          navigate(-1);
+        }}>
+          Back
+        </Home>
+      </div>
+      &emsp;
+      <div className='back inline'>
         <Home onClick={()=>{
           dispatch(addAmount(''));
           dispatch(addPrice(''));

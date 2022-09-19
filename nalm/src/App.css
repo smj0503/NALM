@@ -28,6 +28,10 @@
   padding-top: 40px;
 }
 
+.inline {
+  display: inline-block;
+}
+
 .result {
   padding-top: 50px;
 }

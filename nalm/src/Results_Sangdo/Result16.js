@@ -51,7 +51,16 @@ function Result16() {
           return(<Place16 list={list[i]} i={i+1}/>)
         })}
       </p>
-      <div className='back'>
+      <div className='back inline'>
+        <Home onClick={()=>{
+          dispatch(addGroup(''));
+          navigate(-1);
+        }}>
+          Back
+        </Home>
+      </div>
+      &emsp;
+      <div className='back inline'>
         <Home onClick={()=>{
           dispatch(addAmount(''));
           dispatch(addPrice(''));

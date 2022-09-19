@@ -51,7 +51,16 @@ function Result12() {
           return(<Place12 list={list[i]} i={i+1}/>)
         })}
       </p>
-      <div className='back'>
+      <div className='back inline'>
+        <Home onClick={()=>{
+          dispatch(addNation(''));
+          navigate(-1);
+        }}>
+          Back
+        </Home>
+      </div>
+      &emsp;
+      <div className='back inline'>
         <Home onClick={()=>{
           dispatch(addAmount(''));
           dispatch(addPrice(''));
