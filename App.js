@@ -13,7 +13,7 @@ const path = require('path');
 const mysql      = require('mysql');
 const connection = mysql.createConnection({
   host     : '35.78.108.250',
-  user     : 'smj_nalm',
+  user     : 'nalm',
   password : 'smjcau2017!',
   database : 'nalm'
 });
