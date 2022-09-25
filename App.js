@@ -12,7 +12,7 @@ const path = require('path');
 // });
 const mysql      = require('mysql');
 const connection = mysql.createConnection({
-  host     : '3.115.24.71',
+  host     : '35.76.116.2',
   user     : 'nalm',
   password : 'smjcau2017!',
   database : 'nalm'
