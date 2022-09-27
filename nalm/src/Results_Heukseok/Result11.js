@@ -54,15 +54,6 @@ function Result11() {
       <div className='back inline'>
         <Home onClick={()=>{
           dispatch(addAmount(''));
-          navigate(-1);
-        }}>
-          Back
-        </Home>
-      </div>
-      &emsp;
-      <div className='back inline'>
-        <Home onClick={()=>{
-          dispatch(addAmount(''));
           dispatch(addPrice(''));
           dispatch(addDcategory(''));
           dispatch(addDrink(''));

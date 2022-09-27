@@ -53,15 +53,6 @@ function Result14() {
       </p>
       <div className='back inline'>
         <Home onClick={()=>{
-          dispatch(addKcategory1(''));
-          navigate(-1);
-        }}>
-          Back
-        </Home>
-      </div>
-      &emsp;
-      <div className='back inline'>
-        <Home onClick={()=>{
           dispatch(addAmount(''));
           dispatch(addPrice(''));
           dispatch(addDcategory(''));
