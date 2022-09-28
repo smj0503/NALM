@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
 import { addNation } from "../store.js";
 import styled from "styled-components";
+import character from "../../src/img/Q_nation.png"
 
 const BackBtn = styled.button`
   cursor: pointer;
@@ -28,6 +29,9 @@ function Nation() {
   && condition.price === "비쌈" && condition.experience === "색다름") {
     return (
       <div className="App">
+        <div className='img'>
+          <img src={character} width='20%'/>
+        </div>
         <div className='question'>
           <p>어느 나라로 가볼까요~?</p>
         </div>
@@ -92,6 +96,9 @@ function Nation() {
   else if (condition.location === "흑석" && condition.drink === "x" && condition.price === "저렴") {
     return (
       <div className="App">
+        <div className='img'>
+          <img src={character} width='20%'/>
+        </div>
         <div className='question'>
           <p>어느 나라로 가볼까요~?</p>
         </div>
@@ -144,6 +151,9 @@ function Nation() {
   else if (condition.location === "상도" && condition.drink === "o" && condition.price === "비쌈") {
     return (
       <div className="App">
+        <div className='img'>
+          <img src={character} width='20%'/>
+        </div>
         <div className='question'>
           <p>어느 나라로 가볼까요~?</p>
         </div>
@@ -203,6 +213,9 @@ function Nation() {
   else {
     return (
       <div className="App">
+        <div className='img'>
+          <img src={character} width='20%'/>
+        </div>
         <div className='question'>
           <p>어느 나라로 가볼까요~?</p>
         </div>
