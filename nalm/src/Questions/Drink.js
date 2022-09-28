@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useDispatch } from "react-redux";
 import { addDrink } from '../store.js';
 import styled from "styled-components";
+import character from "../../src/img/Q_drink.png"
 
 const BackBtn = styled.button`
   cursor: pointer;
@@ -22,6 +23,9 @@ function Drink() {
   
   return (
     <div className="App">
+       <div className='img'>
+        <img src={character} width='20%'/>
+      </div>
       <div className='question'>
         <p>술 한잔 어때요?</p>
       </div>

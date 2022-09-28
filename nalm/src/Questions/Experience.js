@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
 import { addExperience } from '../store';
 import styled from "styled-components";
+import character from "../../src/img/Q_experience.png"
 
 const BackBtn = styled.button`
   cursor: pointer;
@@ -27,6 +28,9 @@ function Experiecne() {
   if (condition.location === "흑석" && condition.drink === "o" && condition.price === "비쌈") {
     return (
       <div className="App">
+        <div className='img'>
+          <img src={character} width='20%'/>
+        </div>
         <div className='question'>
           <p>지금 더 끌리는 곳은?</p>
         </div>
@@ -61,6 +65,9 @@ function Experiecne() {
   && (condition.nation === "중식" || condition.nation === "일식")) {
     return (
       <div className="App">
+        <div className='img'>
+          <img src={character} width='20%'/>
+        </div>
         <div className='question'>
           <p>지금 더 끌리는 곳은?</p>
         </div>
@@ -92,6 +99,9 @@ function Experiecne() {
   else if (condition.location === "상도" && condition.drink === "o" && condition.price === "비쌈") {
     return (
       <div className="App">
+        <div className='img'>
+          <img src={character} width='20%'/>
+        </div>
         <div className='question'>
           <p>지금 더 끌리는 곳은?</p>
         </div>
@@ -124,6 +134,9 @@ function Experiecne() {
   && condition.price === "저렴" && condition.mood === "조용") {
     return (
       <div className="App">
+        <div className='img'>
+          <img src={character} width='20%'/>
+        </div>
         <div className='question'>
           <p>지금 더 끌리는 곳은?</p>
         </div>

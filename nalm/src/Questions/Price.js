@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
 import { addPrice } from '../store';
 import styled from "styled-components";
+import character from "../../src/img/Q_price.png"
 
 const BackBtn = styled.button`
   cursor: pointer;
@@ -27,6 +28,9 @@ function Price() {
   if (condition.location === "흑석" && condition.drink === "o"){
     return (
       <div className="App">
+        <div className='img'>
+          <img src={character} width='20%'/>
+        </div>
         <div className='question'>
           <p>당신의 예산은?</p>
         </div>
@@ -60,6 +64,9 @@ function Price() {
   else if (condition.location === "흑석" && condition.drink === "x"){
     return (
       <div className="App">
+        <div className='img'>
+          <img src={character} width='20%'/>
+        </div>
         <div className='question'>
           <p>당신의 예산은?</p>
         </div>
@@ -91,6 +98,9 @@ function Price() {
   else if (condition.location === "상도" && condition.drink === "o"){
     return (
       <div className="App">
+        <div className='img'>
+          <img src={character} width='20%'/>
+        </div>
         <div className='question'>
           <p>당신의 예산은?</p>
         </div>
@@ -122,6 +132,9 @@ function Price() {
   else if (condition.location === "상도" && condition.drink === "x"){
     return (
       <div className="App">
+        <div className='img'>
+          <img src={character} width='20%'/>
+        </div>
         <div className='question'>
           <p>당신의 예산은?</p>
         </div>

@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { useDispatch } from "react-redux";
 import { addLocation } from '../store.js';
 import styled from "styled-components";
+import character from "../../src/img/Q_location.png"
 
 const BackBtn = styled.button`
   cursor: pointer;
@@ -23,6 +24,9 @@ function Location() {
   
   return (
     <div className="App">
+      <div className='img'>
+        <img src={character} width='20%'/>
+      </div>
       <div className='question'>
         <p>어디로 가볼까요?</p>
       </div>
